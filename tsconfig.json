@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "allowJs": true,
+    "rootDir": "./tests",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node", "playwright"],
+    "baseUrl": "./tests",
+    "paths": {
+      "@helpers/*": ["helpers/*"],
+      "@data/*": ["data/*"]
+    },
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictPropertyInitialization": false
+  },
+  "include": ["tests/**/*.ts", "tests/helpers/**/*.ts", "tests/data/*.json", "playwright.config.ts"]
+}
